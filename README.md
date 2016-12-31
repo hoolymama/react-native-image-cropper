@@ -21,9 +21,12 @@ This Image cropper is based on the gl-react-native [library](https://github.com/
 - `pinchToZoom` Use pinch to zoom image? (default: true)
 - `quality`: a value from 0 to 1 to describe the quality of the snapshot. 0 means 0% (most compressed) and 1 means 100% (best quality). (default: 1)
 - `type`: the file type default value is **"png"**, **"jpg"** is also supported. Refer to implementations to see more supported values. (default: jpg)
+- `format`: **"file"** or **"base64"**. Default is **"base64"**
+- `filePath`: If format is **"file"** then filePath is required. 
+
 
 #### `{ImageCrop}` Functions
-- `crop()`: returns a base64 encoded image.
+- `crop()`: returns either a base64 encoded image or a file uri.
 
 
 ## Example

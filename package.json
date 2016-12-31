@@ -1,5 +1,5 @@
 {
-  "name": "react-native-image-cropper",
+  "name": "@hoolymama/react-native-image-cropper",
   "version": "0.0.0-semantically-release",
   "description": "Crop image in React Native using pan to move, pinch to zoom -> capture to file or base64",
   "main": "src/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoffern/react-native-image-cropper.git"
+    "url": "https://github.com/hoolymama/react-native-image-cropper.git"
   },
   "keywords": [
     "imagecropper",

@@ -178,19 +178,24 @@ class ImageCrop extends Component {
     return (
         <View {...this._panResponder.panHandlers}>
           <Surface width={this.props.cropWidth} height={this.props.cropHeight} ref="cropit">
-		        <GLImage
-		          source={{ uri: this.props.image}}
+            <GLImage
+              source={{ uri: this.props.image}}
               imageSize={{height: this.state.imageHeight, width: this.state.imageWidth}}
-		          resizeMode="cover"
-		          zoom={this.state.zoom}
-		          center={[this.state.centerX, this.state.centerY]}
-		        />
+              resizeMode="cover"
+              zoom={this.state.zoom}
+              center={[this.state.centerX, this.state.centerY]}
+            />
           </Surface>
         </View>
     )
   }
   crop(){
-    return this.refs.cropit.captureFrame({quality: this.props.quality, type: this.props.type, format: this.props.format})
+    return this.refs.cropit.captureFrame({
+      quality: this.props.quality, 
+      type: this.props.type, 
+      format: this.props.format,
+      filePath: this.props.filePath
+    })
   }
 }
 ImageCrop.defaultProps = {
@@ -203,6 +208,7 @@ ImageCrop.defaultProps = {
   quality: 1,
   type: 'jpg',
   format: 'base64',
+  filePath: ''
 }
 ImageCrop.propTypes = {
   image: React.PropTypes.string.isRequired,
@@ -214,5 +220,6 @@ ImageCrop.propTypes = {
   quality: React.PropTypes.number,
   type: React.PropTypes.string,
   format: React.PropTypes.string,
+  filePath: React.PropTypes.string,
 }
 module.exports=ImageCrop

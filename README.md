@@ -1,4 +1,4 @@
-# react-native-image-cropper ![](https://img.shields.io/npm/v/react-native-image-cropper.svg) ![](https://img.shields.io/badge/gl--react->= 2.1-05F561.svg) ![](https://img.shields.io/badge/gl--react--native->= 2.28.0-05F561.svg) ![](https://img.shields.io/badge/gl--react--native->= 2.28.0-05F561.svg)
+# react-native-image-cropper
 
 This Image cropper is based on the gl-react-native [library](https://github.com/ProjectSeptemberInc/gl-react-native)
 
